@@ -1,4 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component,Fragment } from 'react'
+
+import Header from './components/Header'
 
 export default class App extends Component {
 
@@ -28,9 +30,14 @@ export default class App extends Component {
     
     
     return (
-      <div>
-        <h1>News</h1>
-      </div>
+      <Fragment>
+          <Header
+            title='News React API' 
+          />
+          <div className="container white news-container">
+            
+          </div>
+      </Fragment>
     )
   }
 }
